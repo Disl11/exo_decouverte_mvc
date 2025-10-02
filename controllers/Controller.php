@@ -13,4 +13,9 @@ class Controller
     {
         $this->model->message = "Message mis a jour grace au Controller !";
     }
+
+    public function resetMessage()
+    {
+        $this->model->message = "Tu arriveras pas a me modifier !";
+    }
 }
