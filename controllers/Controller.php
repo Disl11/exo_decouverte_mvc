@@ -18,4 +18,14 @@ class Controller
     {
         $this->model->message = "Tu arriveras pas a me modifier !";
     }
+
+    public function upperMessage()
+    {
+        $this->model->message = strtoupper($this->model->message);
+    }
+
+    public function deleteMessage()
+    {
+        $this->model->message = "";
+    }
 }
